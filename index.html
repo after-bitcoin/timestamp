@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>After Bitcoin(AB) - The new time system of crypto era</title>
+    <meta 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+      * { font-family: 'Spoqa Han Sans', 'Sans-serif'; }
+      body {
+        background: black;
+        color: white;
+      }
+      .timer {
+        position: absolute;
+        top: 55%;
+        margin-top: -5vh;
+        font-size: 8vh;
+        left: 0;
+        right: 0;
+        width: auto;
+        text-align: center;
+      }
+      @media (max-width: 768px) {
+        .timer {
+          top: 55%;
+          margin-top: -5vw;
+          font-size: 8vw;
+          line-height: 1;
+        }
+      }
+      footer {
+        display: block;
+        margin-top: 1.2em;
+        font-size: 0.3em;
+        font-weight: 300;
+        opacity: 0.7;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      h1 {
+        position: absolute;
+        top: 18%;
+        left: 0;
+        width: 100%;
+        height: 15vh;
+        font-size: 15vh;
+        text-align: center;
+      }
+    </style>
+  </head> 
+  <body>
+    <h1><a href="http://unicode.org/cldr/utility/character.jsp?a=20BF" target="_blank">&#x20bf;</a></h1>
+    <div class="timer">
+      AB <span id="timestamp"></span>
+      <footer><a href="https://github.com/after-bitcoin" target="_blank"><u>After Bitcoin</u></a> is the new time system of crypto era</footer>
+    </div>
+    <script>
+      // Set bitcoin zero block GMT date and time
+      zero = new Date(Date.UTC(2009, 0, 3, 18, 15, 5));
+      var zeroTime = (zero.getTime() + zero.getTimezoneOffset());
+
+      // Update the count down every n ms
+      var x = setInterval(function() {
+
+        // Get todays GTM date and time
+        now = new Date()
+        var nowTime = (now.getTime() + now.getTimezoneOffset());
+        // var now = new Date().getTime();
+          
+        // Find the distance between now and the count down date
+        var distance = nowTime - zeroTime;
+          
+        // Time calculations for years fixed 8
+        var ab = (distance / (1000 * 60 * 60 * 24 * 365)).toFixed(8);
+          
+        // Output the result in an element with id="timer"
+        document.getElementById("timestamp").innerHTML = ab;
+      }, 100);
+      </script>
+  </body>
+</html>
