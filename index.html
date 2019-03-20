@@ -1,13 +1,39 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>After Bitcoin(AB) - The new time system of crypto era</title>
-    <meta 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="After Bitcoin(AB)">
+    <meta property="og:description" content="The new time system of crypto era">
+    <meta name="keywords" content="bitcoin, 비트코인, 사토시 나카모토, Satoshi Nakamoto, Time">
+    <meta property="og:url" content="https://after-bitcoin.github.io/timestamp">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta property="og:image" content="https://after-bitcoin.github.io/timestamp/og_image.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#000">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+    <meta name="theme-color" content="#000">
     <link href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css" rel="stylesheet" type="text/css">
     <style type="text/css">
-      * { font-family: 'Spoqa Han Sans', 'Sans-serif'; }
+      * {
+      	font-family: 'Spoqa Han Sans', 'Sans-serif';
+      	margin: 0;
+      	padding: 0;
+      }
       body {
         background: black;
         color: white;
@@ -15,7 +41,7 @@
       .timer {
         position: absolute;
         top: 55%;
-        margin-top: -5vh;
+        margin-top: -4vh;
         font-size: 8vh;
         left: 0;
         right: 0;
@@ -25,7 +51,7 @@
       @media (max-width: 768px) {
         .timer {
           top: 55%;
-          margin-top: -5vw;
+          margin-top: -4vw;
           font-size: 8vw;
           line-height: 1;
         }
@@ -41,22 +67,22 @@
         color: inherit;
         text-decoration: none;
       }
-      h1 {
+      .icon {
+        display: block;
         position: absolute;
-        top: 18%;
-        left: 0;
-        width: 100%;
-        height: 15vh;
-        font-size: 15vh;
-        text-align: center;
+        top: 32%;
+        left: 50%;
+        margin-left: -8vh;
+        width: auto;
+        height: 16vh;
       }
     </style>
   </head> 
   <body>
-    <h1><a href="http://unicode.org/cldr/utility/character.jsp?a=20BF" target="_blank">&#x20bf;</a></h1>
+    <img src="icon.png" class="icon">
     <div class="timer">
       AB <span id="timestamp"></span>
-      <footer><a href="https://github.com/after-bitcoin" target="_blank"><u>After Bitcoin</u></a> is the new time system of crypto era</footer>
+      <footer><a href="https://github.com/after-bitcoin" target="_blank"><u>After Bitcoin</u></a> is the new time system of crypto era<noscript><br>You need to enable JavaScript to run this app.</noscript></footer>
     </div>
     <script>
       // Set bitcoin zero block GMT date and time
